@@ -3,9 +3,16 @@
 
     const MY_VALUE = 100;
     class User{
-        private $username = "PHP seems to be cool";
+        private $username = "";
+        private $password = "";
 
         public function User(){
+
+        }
+
+        public function __constructor($username,$pass){
+            $this->username = $username;
+            $this->password = $pass;
 
         }
         public function setName($name){
@@ -14,6 +21,14 @@
         }
         public function getName(){
             return $this->username;
+        }
+
+        public function setPass($pass){
+            $this->password = $pass;
+        }
+
+        public function getPass(){
+            return $this->password;
         }
     }
 

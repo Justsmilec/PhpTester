@@ -9,6 +9,11 @@
 </head>
 <body>
     <?php 
+
+
+/**
+ * 14 - 36   uncomment if want 
+ */
         require ('clientMember.php');
         require_once('usageofConstants.php');
         require ('DBHandler/connect.php');
@@ -30,6 +35,8 @@
         //DBHandler::insert("Name_X","Location_Z");
 
 
+
+        
 
     ?>
 </body>
