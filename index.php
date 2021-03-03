@@ -10,9 +10,20 @@
     <?php 
 
         require ('clientMember.php');
+        require_once('usageofConstants.php');
         $client = new ClientMember();  //object created
         echo "<br>";
         echo "This is the client:".$client->getName();
+        echo "<br>";
+        $usage = new UsageofConstants();
+        echo "CONSTANT: ". MY_CONSTANT;  // call the constant name as set in usageofConstants class.
+        echo "<br>";
+        echo "Static variabe ".UsageofStaticClass::getStaticValue();   //UsageofStaticClass is under usageofConstant classpath;
+        UsageofStaticClass::incrementStaticValue();
+        echo "<br>";
+        echo "Static variabe ".UsageofStaticClass::getStaticValue();   //after incrementing it will be 11; then if we call again it will be 12 and so on 
+
+
     ?>
 </body>
 </html>
