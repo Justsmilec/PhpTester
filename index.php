@@ -27,7 +27,7 @@
 
         //DBHandler::connect();
 
-        DBHandler::insert("Name_X","Location_Z");
+        //DBHandler::insert("Name_X","Location_Z");
 
 
 
