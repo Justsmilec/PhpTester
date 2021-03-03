@@ -9,8 +9,7 @@
 <body>
     <?php 
 
-        require ('ClientMember.php');
-        echo "Here is my PHP";
+        require ('clientMember.php');
         $client = new ClientMember();
         echo "<br>";
         echo "This is the client:".$client->getName();
