@@ -10,7 +10,7 @@
     <?php 
 
         require ('clientMember.php');
-        $client = new ClientMember();
+        $client = new ClientMember();  //object created
         echo "<br>";
         echo "This is the client:".$client->getName();
     ?>
