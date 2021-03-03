@@ -19,7 +19,8 @@ class UsageofStaticClass{
 
      private static $var = 10;
      public static function getStaticValue(){
-         return UsageofStaticClass::$var;  //return a static variable
+         return self::$var;  //return a static variable   //--> self is to access static members of a class 
+         //return UsageOfStaticClass::$var  //can use this too is the same as self
      }
 
      public static function incrementStaticValue(){

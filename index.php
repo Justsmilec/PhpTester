@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +9,10 @@
 </head>
 <body>
     <?php 
-
         require ('clientMember.php');
         require_once('usageofConstants.php');
+        require ('DBHandler/connect.php');
+        //use const usageofConstants\
         $client = new ClientMember();  //object created
         echo "<br>";
         echo "This is the client:".$client->getName();
@@ -22,6 +24,11 @@
         UsageofStaticClass::incrementStaticValue();
         echo "<br>";
         echo "Static variabe ".UsageofStaticClass::getStaticValue();   //after incrementing it will be 11; then if we call again it will be 12 and so on 
+
+        //DBHandler::connect();
+
+        DBHandler::insert("Name_X","Location_Z");
+
 
 
     ?>

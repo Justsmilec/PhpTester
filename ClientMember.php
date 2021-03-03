@@ -1,5 +1,4 @@
 <?php   
-
     /**
      * ClientMember class to be tested in index.php
      * create instance in index.php using   require ('clientMember.php') and create object   using $objectname = new ClientMember();
